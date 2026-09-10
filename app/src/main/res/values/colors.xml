@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="techfix_primary">#1565C0</color>
+    <color name="techfix_primary_dark">#0D47A1</color>
+    <color name="techfix_accent">#FF6F00</color>
+
+    <color name="techfix_success">#2E7D32</color>
+    <color name="techfix_warning">#F57C00</color>
+    <color name="techfix_progress">#1976D2</color>
+    <color name="techfix_assigned">#7B1FA2</color>
+    <color name="techfix_error">#C62828</color>
+
+    <color name="techfix_bg">#F5F7FA</color>
+    <color name="techfix_surface">#FFFFFF</color>
+    <color name="techfix_text_primary">#1A1A1A</color>
+    <color name="techfix_text_secondary">#6B7280</color>
+    <color name="techfix_divider">#E5E7EB</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
 </resources>
