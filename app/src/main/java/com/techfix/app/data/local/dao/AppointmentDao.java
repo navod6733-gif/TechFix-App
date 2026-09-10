@@ -1,6 +1,6 @@
 package com.techfix.app.data.local.dao;
 
-//import androidx.lifecycle.LiveData;
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
@@ -23,12 +23,12 @@ public interface AppointmentDao {
     @Delete
     void delete(Appointment appointment);
 
-    /**@Query("SELECT * FROM appointments WHERE userId = :userId ORDER BY requestDate DESC")
+    @Query("SELECT * FROM appointments WHERE userId = :userId ORDER BY requestDate DESC")
     LiveData<List<Appointment>> getAppointmentsForUser(String userId);
 
     @Query("SELECT * FROM appointments WHERE id = :id")
     Appointment getAppointmentById(String id);
 
     @Query("SELECT * FROM appointments")
-    LiveData<List<Appointment>> getAllAppointments();**/
+    LiveData<List<Appointment>> getAllAppointments();
 }
