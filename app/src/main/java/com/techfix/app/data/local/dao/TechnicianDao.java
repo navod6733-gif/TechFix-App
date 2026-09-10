@@ -1,8 +1,15 @@
 package com.techfix.app.data.local.dao;
 
 import androidx.lifecycle.LiveData;
-import androidx.room.*;
+import androidx.room.Dao;
+import androidx.room.Delete;
+import androidx.room.Insert;
+import androidx.room.OnConflictStrategy;
+import androidx.room.Query;
+import androidx.room.Update;
+
 import com.techfix.app.data.local.entities.Technician;
+
 import java.util.List;
 
 @Dao
@@ -21,4 +28,7 @@ public interface TechnicianDao {
 
     @Query("SELECT * FROM technicians WHERE id = :id")
     Technician getTechnicianById(String id);
+
+    @Query("SELECT * FROM technicians")
+    List<Technician> getAllTechniciansSync();
 }

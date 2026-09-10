@@ -1,8 +1,8 @@
 package com.techfix.app.data.local.entities;
 
+import androidx.annotation.NonNull;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
-import androidx.annotation.NonNull;
 
 @Entity(tableName = "users")
 public class AppUser {
@@ -12,4 +12,5 @@ public class AppUser {
     public String name;
     public String email;
     public String phone;
+    public String passwordHash; // never store plain text passwords
 }

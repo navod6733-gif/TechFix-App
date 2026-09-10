@@ -1,8 +1,8 @@
 package com.techfix.app.data.local.entities;
 
+import androidx.annotation.NonNull;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
-import androidx.annotation.NonNull;
 
 @Entity(tableName = "technicians")
 public class Technician {

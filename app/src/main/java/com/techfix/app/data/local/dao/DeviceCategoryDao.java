@@ -1,8 +1,15 @@
 package com.techfix.app.data.local.dao;
 
 import androidx.lifecycle.LiveData;
-import androidx.room.*;
+import androidx.room.Dao;
+import androidx.room.Delete;
+import androidx.room.Insert;
+import androidx.room.OnConflictStrategy;
+import androidx.room.Query;
+import androidx.room.Update;
+
 import com.techfix.app.data.local.entities.DeviceCategory;
+
 import java.util.List;
 
 @Dao
@@ -21,4 +28,7 @@ public interface DeviceCategoryDao {
 
     @Query("SELECT * FROM device_categories WHERE id = :id")
     DeviceCategory getCategoryById(String id);
+
+    @Query("SELECT * FROM device_categories")
+    List<DeviceCategory> getAllCategoriesSync();
 }

@@ -2,12 +2,27 @@ package com.techfix.app.data.local;
 
 
 import android.content.Context;
+
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-import com.techfix.app.data.local.dao.*;
-import com.techfix.app.data.local.entities.*;
+import com.techfix.app.data.local.dao.AppUserDao;
+import com.techfix.app.data.local.dao.AppointmentDao;
+import com.techfix.app.data.local.dao.BranchDao;
+import com.techfix.app.data.local.dao.DeviceCategoryDao;
+import com.techfix.app.data.local.dao.PaymentDao;
+import com.techfix.app.data.local.dao.RepairServiceDao;
+import com.techfix.app.data.local.dao.SparePartDao;
+import com.techfix.app.data.local.dao.TechnicianDao;
+import com.techfix.app.data.local.entities.AppUser;
+import com.techfix.app.data.local.entities.Appointment;
+import com.techfix.app.data.local.entities.Branch;
+import com.techfix.app.data.local.entities.DeviceCategory;
+import com.techfix.app.data.local.entities.Payment;
+import com.techfix.app.data.local.entities.RepairService;
+import com.techfix.app.data.local.entities.SparePart;
+import com.techfix.app.data.local.entities.Technician;
 
 @Database(
         entities = {
