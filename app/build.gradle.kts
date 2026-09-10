@@ -2,14 +2,14 @@
 plugins {
     alias(libs.plugins.android.application)
 
-    // your existing Firebase plugin line stays here too
+
 }
 
 
 android {
     namespace = "com.techfix.app"
     compileSdk {
-        version = release(36) {
+        version = release(37) {
             minorApiLevel = 1
         }
     }
@@ -40,10 +40,23 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
 
 
+
+
+    // Room
     val room_version = "2.6.1"
     implementation("androidx.room:room-runtime:$room_version")
-    annotationProcessor("androidx.room:room-compiler:$room_version") // Java projects
-
+    annotationProcessor("androidx.room:room-compiler:$room_version")
+    implementation("com.google.android.gms:play-services-location:21.3.0")
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+    implementation("com.google.android.material:material:1.12.0")
 }
