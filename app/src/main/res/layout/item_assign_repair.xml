@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="6dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/techfix_surface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/aServiceName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/techfix_text_primary"/>
+
+        <TextView
+            android:id="@+id/aCustomerBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/techfix_text_secondary"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/aStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/techfix_primary"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"/>
+
+        <Spinner
+            android:id="@+id/aTechnicianSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/aAssignButton"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:text="Assign"
+                android:textSize="13sp"
+                app:cornerRadius="10dp"
+                app:backgroundTint="@color/techfix_primary"
+                android:layout_marginEnd="4dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/aAdvanceButton"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:text="Advance"
+                android:textSize="13sp"
+                app:cornerRadius="10dp"
+                app:backgroundTint="@color/techfix_success"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

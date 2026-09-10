@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/techfix_bg"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Panel"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/techfix_text_primary"
+        android:layout_marginBottom="20dp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="2dp"
+        app:cardBackgroundColor="@color/techfix_surface">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnManageTechnicians"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Manage Technicians"
+            android:textAlignment="viewStart"
+            android:paddingStart="16dp"
+            app:iconGravity="textStart"
+            app:backgroundTint="@color/techfix_surface"
+            android:textColor="@color/techfix_text_primary"
+            style="@style/Widget.Material3.Button.TextButton"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="2dp"
+        app:cardBackgroundColor="@color/techfix_surface">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnManageParts"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Manage Spare Parts"
+            android:textAlignment="viewStart"
+            android:paddingStart="16dp"
+            app:backgroundTint="@color/techfix_surface"
+            android:textColor="@color/techfix_text_primary"
+            style="@style/Widget.Material3.Button.TextButton"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="2dp"
+        app:cardBackgroundColor="@color/techfix_surface">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAssignRepairs"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Assign &amp; Process Repairs"
+            android:textAlignment="viewStart"
+            android:paddingStart="16dp"
+            app:backgroundTint="@color/techfix_surface"
+            android:textColor="@color/techfix_text_primary"
+            style="@style/Widget.Material3.Button.TextButton"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogout1"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Log Out"
+        app:cornerRadius="12dp"
+        app:strokeColor="@color/techfix_error"
+        app:strokeWidth="1dp"
+        android:textColor="@color/techfix_error"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
