@@ -24,17 +24,6 @@ public class DataSeeder {
         insertBranchIfMissing(db, "branch_galle", "TechFix Galle",
                 "45 Main Street, Galle Fort", 6.0535, 80.2210, "091-2233445");
 
-        insertBranchIfMissing(db, "branch_kandy", "TechFix Kandy",
-                "78 Peradeniya Road, Kandy", 7.2906, 80.6337, "081-2244556");
-
-        insertBranchIfMissing(db, "branch_negombo", "TechFix Negombo",
-                "12 Lewis Place, Negombo", 7.2083, 79.8358, "031-2233667");
-
-        insertBranchIfMissing(db, "branch_jaffna", "TechFix Jaffna",
-                "56 Hospital Road, Jaffna", 9.6615, 80.0255, "021-2223344");
-
-        insertBranchIfMissing(db, "branch_kurunegala", "TechFix Kurunegala",
-                "34 Kandy Road, Kurunegala", 7.4818, 80.3609, "037-2234455");
     }
 
     private static void insertBranchIfMissing(AppDatabase db, String id, String name,
